@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>police.ai | AI Voice Dispatcher</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg-orbit"></div>
+    <div class="grid-noise"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">911</div>
+        <div>
+          <p class="brand-title">police.ai</p>
+          <p class="brand-subtitle">Instant AI call handling</p>
+        </div>
+      </div>
+      <div class="top-actions">
+        <a class="ghost" href="call-details.html">Call Intake</a>
+        <button class="ghost theme-toggle" id="themeToggle">Light Mode</button>
+        <div class="status-pill">
+          <span class="pulse"></span>
+          <span>System Online</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="hero">
+        <div class="hero-text">
+          <p class="eyebrow">911 without delays.</p>
+          <h1>police.ai intake, instant triage, human takeover when it matters most.</h1>
+          <p class="subhead">
+            Nexus Receiver picks up immediately, captures critical details, and escalates life-or-death calls to
+            human dispatchers with a complete Q&A trail.
+          </p>
+          <div class="hero-actions">
+            <a class="primary" href="call-details.html">Open Call Intake</a>
+          </div>
+          <div class="call-metrics">
+            <div>
+              <p class="metric-label">Average pickup time</p>
+              <p class="metric-value">0s</p>
+            </div>
+            <div>
+              <p class="metric-label">Human escalation</p>
+              <p class="metric-value">Always-on</p>
+            </div>
+            <div>
+              <p class="metric-label">Coverage zones</p>
+              <p class="metric-value">12 districts</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-panel">
+          <div class="panel-header">
+            <div>
+              <h2>Live Monitor</h2>
+              <p>Current call, AI summary, human handoff</p>
+            </div>
+            <div class="timer">Active</div>
+          </div>
+          <div class="panel-body">
+            <div class="landing-card">
+              <h3>AI handles the first minute</h3>
+              <p>Collects location, injuries, and danger status in a structured format.</p>
+            </div>
+            <div class="landing-card">
+              <h3>Human takeover for high risk</h3>
+              <p>Critical or high panic calls are routed to a dispatcher with full context.</p>
+            </div>
+            <div class="landing-card">
+              <h3>Dispatch stays synchronized</h3>
+              <p>Auto-updates status, units, and audit history for supervisors.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="feature">
+          <h3>AI triage with safeguards</h3>
+          <p>Gemini proposes priorities, but escalation rules always hand off urgent cases.</p>
+        </div>
+        <div class="feature">
+          <h3>Complete Q&A trail</h3>
+          <p>Every AI question and caller answer is stored and visible to human operators.</p>
+        </div>
+        <div class="feature">
+          <h3>Human-first monitoring</h3>
+          <p>Dedicated dashboard shows live call, past calls, and dispatch decisions.</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- <footer class="footer">
+      <p>Demo system only. Always connect to live emergency services in production.</p>
+    </footer> -->
+
+    <script src="app-landing.js"></script>
+  </body>
+</html>

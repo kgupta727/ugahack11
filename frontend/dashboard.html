@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>police.ai | Dispatcher Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg-orbit"></div>
+    <div class="grid-noise"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">911</div>
+        <div>
+          <p class="brand-title">police.ai</p>
+          <p class="brand-subtitle">Human oversight + AI intake</p>
+        </div>
+      </div>
+      <div class="top-actions">
+        <a class="ghost" href="index.html">Landing</a>
+        <button class="ghost theme-toggle" id="themeToggle">Light Mode</button>
+        <div class="status-pill">
+          <span class="pulse"></span>
+          <span>Live Monitoring</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="current-call" id="currentCall"></section>
+
+      <section class="call-list">
+        <div class="call-list-header">
+          <div>
+            <h2>Past Calls</h2>
+            <p>Priorities, dispatch status, and escalation tracking.</p>
+          </div>
+          <button class="ghost" id="refreshQueue">Refresh</button>
+        </div>
+        <div class="call-list-body" id="callList"></div>
+      </section>
+
+      <section class="records">
+        <div class="records-header">
+          <div>
+            <h2>Audit Trail</h2>
+            <p>Immutable call events and dispatcher actions.</p>
+          </div>
+          <button class="ghost" id="refreshAudit">Refresh</button>
+        </div>
+        <div class="audit-list" id="auditList"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Demo system only. Always connect to live emergency services in production.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
